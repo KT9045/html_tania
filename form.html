@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Form Sample</title>
 </head>
 <body>
+    <a href="index.html">Tell me how much you know about Bruce Lee</a>
     
+    <form method="POST" action="https://formspree.io/koldovsky@gmail.com">
+        <label for="name">Name:</label>
+        <input type="text" id="name"
+             placeholder="Name" required
+             name="user-name">
+        <br>
+        <label>
+            Email: <input type="email" placeholder="Email"  required
+            name="user-email">
+        </label>
+        <label><br>
+            Did you know Bruce Lee before?
+           <input type="question" placeholder="Yes/No"  required
+            name="Yes/No">
+            <label>
+                Why is he still so popular?
+                 <input type="question" placeholder="Yes/No"  required
+            name="Yes/No">
+                
+        <input type="submit">
+    </form>
+  
 </body>
 </html>
