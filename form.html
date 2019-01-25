@@ -6,30 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form Sample</title>
 </head>
-<body>
-    <a href="index.html">Tell me how much you know about Bruce Lee</a>
+<body style="background-color:lightyellow;">
+  <p><b>Tell me how much you know about</b</p>>
+    <a href="index.html">Bruce Lee</a>
     
-    <form method="POST" action="https://formspree.io/koldovsky@gmail.com">
-        <label for="name">Name:</label>
+    <form method="POST" action="https://formspree.io/t.karpa@ucu.edu.ua">
+        <label for="name">Your name:</label>
         <input type="text" id="name"
              placeholder="Name" required
              name="user-name">
         <br>
         <label>
-            Email: <input type="email" placeholder="Email"  required
+            Your email: <input type="email" placeholder="Email"  required
             name="user-email">
         </label>
-        <label><br>
+      <label><br>
+          Are you ready to make it in 5 minutes?
+  <Select the time for the test></Select>:
+  <input type="time" name="usr_time">
+</form>
+</label>
+  <label><br>
             Did you know Bruce Lee before?
            <input type="question" placeholder="Yes/No"  required
             name="Yes/No">
-            <label>
+            <label><br>
                 Why is he still so popular?
-                 <input type="question" placeholder="Yes/No"  required
-            name="Yes/No">
-                
-        <input type="submit">
+                 <input type="question" placeholder="Because..."  required
+            name="Because">
+            </label><br>
+            
+            <label>
+                There are ... movies about Bruce Lee
+            <select id="groups" name="groups">
+  <optgroup label="amounts">
+    <option>10</option>
+    <option selected>13</option>
+    <option>15</option>
+  </optgroup><br>
+  </select>
+
+   <label><br>
+  Was he married to a Canadian woman or Japanese?
+   <input type="question" placeholder="..."  required
+            name="...">
+            </label>
     </form>
-  
+    <label><br>
+        Would  you make a selfie if you meet him at the streets?
+        </label>
+  <form>
+  <input type="radio" name="yes" value="Yes, the more selfies the better"> Yes, the more selfies the better<br>
+  <input type="radio" name="no" value="Of course not">Of course not<br>
+  <input type="radio" name="maybe" value="maybe"> Maybe 
+</form> 
+ 
+ <p>What was the most important job for him?</p>
+
+<form action="/action_page.php">
+  <select name="jobs">
+    <option value="artist">Artist</option>
+    <option value="philosopher">Philosopher</option>
+    <option value="boxer" selected>Boxer</option>
+    <option value="actor">Actor</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+  <label>
+       Would you like to add some comments?
+    <textarea cols="30" rows="10"></textarea>
+    </label>
+     <input type="submit">
 </body>
 </html>
